@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
- * main - Entry point
+/**
+ * main - it is the first function and it serves as the entry point.
  *
  * Return: (0)
  */
