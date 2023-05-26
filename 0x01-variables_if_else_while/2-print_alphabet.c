@@ -5,13 +5,15 @@
  * Return: (0)
  */
 
-	int main(void)
+	int main()
 {
-		int a = 97;
+		char a = 'a';
 
-		while (a < 123)
-		a++;
-		putchar(a);
+		while (a <= 'z')
+		{
+			putchar(a);
+			a++;
+		}
 
 	return (0);
 }
