@@ -10,11 +10,11 @@ int print_last_digit(int i)
 {
 	if (i < 0 || i >= 0)
 	{
-		i = i % 10;
+		int n = i % 10;
 
-		_putchar (i + '0');
-		return (i);
+		_putchar (n + '0');
+		return (n);
 	}
-	else 
-		return (1);
+	else
+		return (0);
 }
