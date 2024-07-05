@@ -4,5 +4,5 @@
 base_name=$(basename "$CFILE".c)
 
 #Generate assembly code
-gcc -S -masm=intel "$CFILE" -o "$base_name.s"
+gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
 
