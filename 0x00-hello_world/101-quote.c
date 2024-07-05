@@ -12,7 +12,7 @@ int main(void)
 
 	while (str[i])
 	{
-		write(str[i], stderr);
+		write(2,&str[i], 1);
 		i++;
 	}
 	return (1);
