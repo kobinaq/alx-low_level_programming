@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#Extract basename out of the file name
+base_name=$(basename "$CFILE".c)
+
+#Generate assembly code
+gcc -S -masm=intel "$CFILE" -o "$base_name.s"
+
