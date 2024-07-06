@@ -17,7 +17,7 @@ int main(void)
 		while (b < 10)
 		{
 			if (count > 0)
-			{	
+			{
 			putchar(',');
 			putchar(' ');
 			}
