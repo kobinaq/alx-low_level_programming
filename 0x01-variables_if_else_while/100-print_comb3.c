@@ -18,8 +18,8 @@ int main(void)
 		{
 			if (count > 0)
 			{	
-			putchar(' ');
 			putchar(',');
+			putchar(' ');
 			}
 			putchar(a + '0');
 			putchar(b + '0');
