@@ -2,7 +2,7 @@
 
 /**
  *main - Entry point
- *Return: It's Always 0
+ *Return: Always 0
  */
 int main(void)
 {
@@ -20,8 +20,10 @@ int main(void)
 			while (c < 10)
 			{
 				if (count > 0)
+				{
 					putchar (',');
 					putchar(' ');
+				}
 				putchar(a + '0');
 				putchar(b + '0');
 				putchar(c + '0');
