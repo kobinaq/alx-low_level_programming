@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _isdigit - checks for uppercase character
+ * _isdigit - checks for number between zero and nine
  * @c: input letter
  * Return: 1 is c is uppercase and 0 otherwise
  */
