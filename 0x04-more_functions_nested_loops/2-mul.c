@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * mul -  multiplies two integers
+ * mul - multiplies two integers
  * @a: first input number
  * @b: secind input number
+ * Return: product of a and b
  */
 
 int mul(int a, int b)
 {
-	int c = a * b;
-	return(c);
+	return (a * b);
 }
