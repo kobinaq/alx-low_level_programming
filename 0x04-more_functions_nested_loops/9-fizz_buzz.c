@@ -1,42 +1,55 @@
 #include <stdio.h>
-#include "main.h"
 
-/**
- * _isdigit - checks for number between zero and nine
- * @c: input letter
- * Return: 1 is c is uppercase and 0 otherwise
- */
-
-#include <stdio.h>
+void print_number(int n)
+{
+    if (n >= 10)
+        print_number(n / 10);
+    _putchar((n % 10) + '0');
+}
 
 int main(void)
 {
-	for (int i = 1; i <= 100; i++)
-	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else
-		{
-			printf("%d", i);
-		}
-		if (i < 100)
-		{
-			printf(" ");
-		}
-	}
-	printf("\n");  // Print a newline after the loop ends
+    int i = 1;
 
-	return (0);
+    while (i <= 100)
+    {
+        if (i % 3 == 0 && i % 5 == 0)
+        {
+            _putchar('F');
+            _putchar('i');
+            _putchar('z');
+            _putchar('z');
+            _putchar('B');
+            _putchar('u');
+            _putchar('z');
+            _putchar('z');
+        }
+        else if (i % 3 == 0)
+        {
+            _putchar('F');
+            _putchar('i');
+            _putchar('z');
+            _putchar('z');
+        }
+        else if (i % 5 == 0)
+        {
+            _putchar('B');
+            _putchar('u');
+            _putchar('z');
+            _putchar('z');
+        }
+        else
+        {
+            print_number(i);
+        }
+
+        if (i < 100)
+        {
+            _putchar(' ');
+        }
+        i++;
+    }
+    _putchar('\n');
+
+    return (0);
 }
-
-
