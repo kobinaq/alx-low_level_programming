@@ -3,8 +3,11 @@
 
 /**
  * main - Entry point
- *
- *
+ * _putchar - prints character
+ * print_number - prints a number
+ * Return - always 0
+ * @c: input number
+ * @n: input number
  */
 
 int _putchar(char c)
