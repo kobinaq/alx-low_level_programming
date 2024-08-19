@@ -23,17 +23,18 @@ void print_triangle(int size)
             {
                 if (j <= size - i)
                 {
-                    _putchar(' ');  // Print spaces before the #
+                    _putchar(' ');
                 }
                 else
                 {
-                    _putchar('#');  // Print the # character
+                    _putchar('#');
                 }
                 j++;
             }
-            _putchar('\n');  // Move to the next line after each row
+            _putchar('\n');
             i++;
         }
     }
 }
+
 
