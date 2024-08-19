@@ -25,7 +25,7 @@ int _atoi(char *s)
 		{
 			/* Convert character to integer */
 			result = result * 10 + (s[i] - '0');
-			tarted = 1;
+			started = 1;
 		}
 		else if (started)
 		{
