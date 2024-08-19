@@ -2,19 +2,21 @@
 #include "main.h"
 
 /**
- * main - Entry point
  * _putchar - prints character
- * print_number - prints a number
- * Return - always 0
- * @c: input number
- * @n: input number
+ *@c: input number
+ *
+ * Return: always 0
  */
 
 int _putchar(char c)
 {
-    return putchar(c);
+	return (putchar(c));
 }
 
+/**
+ * print_number - prints a number
+ * @n: input number
+ */
 void print_number(int n)
 {
 	if (n >= 10)
@@ -22,6 +24,11 @@ void print_number(int n)
 	_putchar((n % 10) + '0');
 }
 
+/**
+ * main - Entry point
+ * 
+ * Return: always 0
+ */
 int main(void)
 {
 	int i = 1;
