@@ -8,10 +8,10 @@
  */
 int _atoi(char *s)
 {
-	long int i = 0;
-	long int sign = 1;
-	long int result = 0;
-	long int started = 0;
+	int i = 0;
+	int sign = 1;
+	int result = 0;
+	int started = 0;
 
     /* Iterate through the string */
 	while (s[i] != '\0')
